@@ -1,4 +1,5 @@
 const mysql = require('mysql2');
+const fs = require('fs')
 
 const conexion = mysql.createConnection({
     host: 'localhost',
@@ -22,6 +23,8 @@ conexion.query('SELECT * FROM producto', (err, results) => {
         return;
     }
     console.log('Resultados de la consulta:', results);
+    const data = JSON.stringify(results, null, 2);
+    fs.writeFileSync('resultados.txt',data,'utf-8')
 });
 
 conexion.end();

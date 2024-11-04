@@ -1,0 +1,74 @@
+[
+  {
+    "id_producto": 1,
+    "descripcion": "Pantalon Rojo M",
+    "precio": 500,
+    "existencia": 100
+  },
+  {
+    "id_producto": 2,
+    "descripcion": "Blusa Amarilla L",
+    "precio": 300,
+    "existencia": 50
+  },
+  {
+    "id_producto": 3,
+    "descripcion": "Camisa Azul S",
+    "precio": 600,
+    "existencia": 25
+  },
+  {
+    "id_producto": 4,
+    "descripcion": "Vaso Tequilero",
+    "precio": 200,
+    "existencia": 30
+  },
+  {
+    "id_producto": 5,
+    "descripcion": "Gorra Magenta",
+    "precio": 2002,
+    "existencia": 4423
+  },
+  {
+    "id_producto": 6,
+    "descripcion": "Saco Verde S",
+    "precio": 200,
+    "existencia": 23
+  },
+  {
+    "id_producto": 8,
+    "descripcion": "Pantalones S",
+    "precio": 500,
+    "existencia": 15
+  },
+  {
+    "id_producto": 9,
+    "descripcion": "Corbata Azul Marino L",
+    "precio": 50,
+    "existencia": 1
+  },
+  {
+    "id_producto": 12,
+    "descripcion": "Calcetines",
+    "precio": 12,
+    "existencia": 303
+  },
+  {
+    "id_producto": 13,
+    "descripcion": "Saco M",
+    "precio": 4000,
+    "existencia": 100000
+  },
+  {
+    "id_producto": 14,
+    "descripcion": "Tennis M",
+    "precio": 1600,
+    "existencia": 130
+  },
+  {
+    "id_producto": 15,
+    "descripcion": "Mouse Dell",
+    "precio": 200,
+    "existencia": 3456
+  }
+]
