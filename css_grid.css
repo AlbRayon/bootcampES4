@@ -1,0 +1,87 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 10px 20px;
+}
+
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: rgb(187, 84, 0);
+}
+
+header .search input {
+    padding: 5px;
+    width: 200px;
+}
+
+nav {
+    background-color: #3333cc;
+    color: white;
+    padding: 10px;
+    text-align: left;
+}
+
+main {
+    display: flex;
+    padding: 5px;
+}
+
+.sidebar-left, .sidebar-right {
+    width: 20%;
+    box-sizing: border-box;
+}
+
+.content {
+    width: 80%;
+    box-sizing: border-box;
+}
+
+.sidebar-left h2, .sidebar-right h2 {
+    color: #002e83;
+}
+.sidebar-right h2{
+    border-style: groove;
+}
+.sidebar-left .noticias ul, .sidebar-right section {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.noticias{
+    border-style: groove;
+}
+.sidebar-left .noticias ul li {
+    margin-bottom: 10px;
+}
+
+.content article {
+    margin-bottom: 20px;
+}
+
+.content article h2 {
+    color: #3333cc;
+}
+
+.content article img {
+    width: 100%;
+    height: auto;
+    margin: 10px 0;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #f0f0f0;
+    font-size: 14px;
+}
