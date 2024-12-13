@@ -15,6 +15,9 @@ console.log(`El indice de Javier es ${javier}`)
 if(laura > -1 && javier > -1){
     [participantes[laura], participantes[javier]] = [participantes[javier], participantes[laura]]
 }
+participantes.forEach(participante=>{
+    console.log(participante)
+})
 
 //5-Patricia es descalificada
 patricia = participantes.indexOf('Patricia')
@@ -22,10 +25,16 @@ console.log(patricia)
 if(patricia > -1){
     participantes.splice(patricia)
 }
+participantes.forEach(participante=>{
+    console.log(participante)
+})
 
 //6-Se incorporan Raul y Sofia detras de Elena y antes de Carlos
 carlos = participantes.indexOf('Carlos')
 participantes.splice(carlos,0,'Raul','Sofia')
+participantes.forEach(participante=>{
+    console.log(participante)
+})
 participantes.unshift('Carmen')
 participantes.forEach(participante=>{
     console.log(participante)
