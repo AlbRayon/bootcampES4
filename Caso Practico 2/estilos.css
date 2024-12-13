@@ -1,0 +1,20 @@
+.container{
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+.calculadora{
+    padding: 0;
+    background-color: rgb(219, 58, 58);
+
+}
+.resultado{
+    background-color: grey;
+    padding: 0;
+    text-align: right;
+}
+button{
+    color: white;
+    background-color: black;
+    display: auto;
+}
