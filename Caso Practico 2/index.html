@@ -4,39 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <link rel="stylesheet" href="./estilos.css">
+
 </head>
 <body>
-    <div class="container">
-    
-    
-    <div class="calculadora">
-        <div class="resultado" id="resultado">0
+    <div class="calculator">
+        <input type="text" class="display" id="display" readonly>
+        <div class="buttons">
+            <button class="button" data-value="7" onclick="ingresoValor(7)">7</button>
+            <button class="button" data-value="8" onclick="ingresoValor(8)">8</button>
+            <button class="button" data-value="9" onclick="ingresoValor(9)">9</button>
+            <button class="button operator" data-value="/" onclick="ingresoValor('/')">/</button>
+            <button class="button" data-value="4" onclick="ingresoValor(4)">4</button>
+            <button class="button" data-value="5" onclick="ingresoValor(5)">5</button>
+            <button class="button" data-value="6" onclick="ingresoValor(6)">6</button>
+            <button class="button operator" data-value="*" onclick="ingresoValor('*')">*</button>
+            <button class="button" data-value="1" onclick="ingresoValor(1)">1</button>
+            <button class="button" data-value="2" onclick="ingresoValor(2)">2</button>
+            <button class="button" data-value="3" onclick="ingresoValor(3)">3</button>
+            <button class="button operator" data-value="-" onclick="ingresoValor('-')">-</button>
+            <button class="button" data-value="0" onclick="ingresoValor(0)">0</button>
+            <button class="button" data-value="." onclick="ingresoValor('.')">.</button>
+            <button class="button clear" onclick="limpiar()">C</button>
+            <button class="button operator" data-value="+" onclick="ingresoValor('+')">+</button>
+            <button class="button operator" id="equals" data-value="=" onclick="(ingresoValor('='))">=</button>
         </div>
-        <button>1</button>
-        <button>2</button>
-        <button>3</button>
-        <button id="sumar">+</button>
-        <br>
-        <button>4</button>
-        <button>5</button>
-        <button>6</button>
-        <button id="restar">-</button><br>
-        <button>7</button>
-        <button>8</button>
-        <button>9</button>
-        <button id="multiplicar">*</button>
-        <br>
-        <button>.</button>
-        <button>0</button>
-        <button>=</button>
-        
-        
-        
-        <button id="dividir">/</button>
-
-
     </div>
-</div>
+    <script src="./script.js"></script>
 </body>
 </html>
