@@ -1,0 +1,21 @@
+span{
+    font-weight: bold;
+}
+button{
+    margin-left: 20px;
+    font-weight: bold;
+}
+th{
+    border: 2px solid black;
+    height: 30px;
+    width: 30px;
+    margin: 0px;
+}
+.box{
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+}
+.boxes{
+    display: flex;
+}
