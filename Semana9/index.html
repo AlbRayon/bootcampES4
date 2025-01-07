@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semana9
+    </title>
+    <link rel="stylesheet" href="estilo.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <div class="boxes" id="boxes">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+    <div class="toggles">
+        <h1>Toggles</h1>
+        <div class="buttons">
+        <button type="button" id="cambiarColor">Toggle Colors</button>
+        <button type="button" id="redondear">Toggle Rounded Borders</button>
+        <button type="button" id="agregarCaja">Add a New Box</button></div>
+    </div>
+    <div class="description">
+        <h1>Descriptions:</h1>
+            <ul>
+                <li><span>Toggle Colors:</span> Toggles the color on and off for each box using CSS classes </li>
+                <li><span>Toggle Rounded Borders:</span> Toggles the rounded-borders on and off for each box using CSS attributes.</li>
+                <li><span>Add a New Box:</span> Adds one new box to the container.</li>
+            </ul>
+    </div>
+    <script>
+        $(document).ready(function () {
+            let colorActivo = false;
+            let bordeActivo = false;
+
+            $('#cambiarColor').click(function () {
+                colorActivo = !colorActivo;
+                $('.box').css('background-color', colorActivo ? 'rgb(8, 128, 176)' : 'white');
+            });
+
+            $('#redondear').click(function () {
+                bordeActivo = !bordeActivo;
+                $('.box').css('border-radius', bordeActivo ? '10px' : '0px');
+            });
+
+            $('#agregarCaja').click(function () {
+                const nuevaCaja = $('<div></div>').addClass('box');
+                $('#boxes').append(nuevaCaja);
+            });
+        });
+    </script>
+    <!-- <script src="./script.js"></script> -->
+</body>
+</html>
