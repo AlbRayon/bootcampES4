@@ -1,0 +1,42 @@
+body{
+    background-image: url(/Semana10-API/galar-scenery.png);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+#pokemon {
+    margin-top: 20px;
+    font-size: 30px;
+    color: rgb(235, 0, 0);
+    text-align: center;
+}
+
+input, button {
+    padding: 10px;
+    font-size: 16px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+h1{
+    color: rgba(26, 224, 215, 0.897);
+    text-decoration: solid;
+    text-decoration: dashed;
+}
