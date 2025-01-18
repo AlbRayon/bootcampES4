@@ -1,5 +1,5 @@
 async function fetchApiData() {
-    const apiUrl = 'https://pokeapi.co/api/v2/pokemon/3';
+    const apiUrl = 'https://rickandmortyapi.com/api/character/1';
     try {
         const response = await fetch(apiUrl);
         if (!response.ok) {
