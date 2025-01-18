@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulta con JQuery</title>
+    <style>
+        body{
+            background-color: wheat;
+            color: black;
+            margin: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Usuarios Consulta con JQuery</h1>
+        <ul id="listaUsuarios"></ul>
+    </div>
+    <script>
+        function consultarApi() {
+          $.ajax({
+            url: 'https://jsonplaceholder.typicode.com/users',
+            method: 'GET',
+            success: function(usuarios) {
+              usuarios.forEach(ususario => {
+                $('#listaUsuarios').append(`<li>${ususario.name}</li>`);
+              });
+            },
+            error: function(xhr, status, error) {
+              console.error('Error al obtener los usuarios:', error);
+              $('#listaUsuarios').append('<li style="color: red;">Hubo un problema al cargar los usuarios.</li>');
+            }
+          });
+        }
+
+        $(document).ready(function() {
+          consultarApi();
+        });
+      </script>
+</body>
+</html>

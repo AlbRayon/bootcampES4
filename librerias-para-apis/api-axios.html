@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulta con Axios</title>
+    <style>
+        body{
+            background-color: wheat;
+            color: black;
+            margin: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Usuarios Consulta con Axios</h1>
+        <ul id="listaUsuarios"></ul>
+    </div>
+    <script>
+        const listaUsuarios = document.getElementById('listaUsuarios')
+
+        async function obtenerUsuarios(){
+            try{
+                const respuesta = await axios.get('https://jsonplaceholder.typicode.com/users');('https://jsonplaceholder.typicode.com/users');
+                const usuarios = respuesta.data;
+                
+                usuarios.forEach(usuario =>{
+                    const elementoLista = document.createElement('li')
+                    const infoUsuario = `El usuario se llama ${usuario.name} y su username es ${usuario.username}`
+                    elementoLista.textContent = infoUsuario
+                    listaUsuarios.appendChild(elementoLista)
+                })
+            }
+            catch(error){
+                console.error(error)
+            }
+
+        }
+    obtenerUsuarios();  
+    </script>
+</body>
+</html>
