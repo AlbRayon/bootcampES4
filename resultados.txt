@@ -1,32 +1,62 @@
 [
   {
-    "id_producto": 1,
-    "descripcion": "Pantalon Rojo M",
-    "existencia": 500,
-    "precio": 100
+    "plato": "Paella valenciana",
+    "precio": "18.00",
+    "nivel_dificultad": 5,
+    "categoria": "Arroces"
   },
   {
-    "id_producto": 3,
-    "descripcion": "Sueter Verde M",
-    "existencia": 1245,
-    "precio": 450
+    "plato": "Sangría casera",
+    "precio": "6.00",
+    "nivel_dificultad": 2,
+    "categoria": "Bebidas"
   },
   {
-    "id_producto": 4,
-    "descripcion": "Camiseta Azul S",
-    "existencia": 567,
-    "precio": 123
+    "plato": "Entrecot a la brasa",
+    "precio": "22.50",
+    "nivel_dificultad": 4,
+    "categoria": "Carnes"
   },
   {
-    "id_producto": 5,
-    "descripcion": "Cinturon Negro S",
-    "existencia": 500,
-    "precio": 200
+    "plato": "Ensalada César",
+    "precio": "12.00",
+    "nivel_dificultad": 2,
+    "categoria": "Ensaladas"
   },
   {
-    "id_producto": 6,
-    "descripcion": "Zapatillas",
-    "existencia": 654,
-    "precio": 52
+    "plato": "Croquetas caseras",
+    "precio": "8.50",
+    "nivel_dificultad": 3,
+    "categoria": "Entrantes"
+  },
+  {
+    "plato": "Tataki de atún",
+    "precio": "19.50",
+    "nivel_dificultad": 4,
+    "categoria": "Especialidades"
+  },
+  {
+    "plato": "Pasta carbonara",
+    "precio": "14.50",
+    "nivel_dificultad": 2,
+    "categoria": "Pastas"
+  },
+  {
+    "plato": "Lubina al horno",
+    "precio": "24.00",
+    "nivel_dificultad": 3,
+    "categoria": "Pescados"
+  },
+  {
+    "plato": "Risotto de setas",
+    "precio": "16.50",
+    "nivel_dificultad": 3,
+    "categoria": "Platos Veganos"
+  },
+  {
+    "plato": "Tarta de chocolate",
+    "precio": "7.50",
+    "nivel_dificultad": 4,
+    "categoria": "Postres"
   }
 ]
