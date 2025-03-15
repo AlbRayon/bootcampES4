@@ -1,0 +1,1 @@
+En este ejercicio la difencia con otros lenguajes es que Python trae funciones ya incluidas en el lenguaje por ejemplo el sum que hace una suma de los numero en un rango en este caso.
