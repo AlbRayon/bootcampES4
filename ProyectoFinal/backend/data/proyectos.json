@@ -1,0 +1,31 @@
+[
+    {
+      "id": 1,
+      "titulo": "Calculadora en JavaScript",
+      "descripcion": "Una simple calculadora web usando HTML, CSS y JavaScript.",
+      "tecnologias": ["HTML", "CSS", "JavaScript"],
+      "resultados": "Calculadora funcional básica para sumar, restar, multiplicar y dividir."
+    },
+    {
+      "id": 2,
+      "titulo": "Edad desde fecha de nacimiento",
+      "descripcion": "Aplicación que calcula tu edad a partir del nombre y fecha de nacimiento.",
+      "tecnologias": ["JavaScript", "HTML"],
+      "resultados": "Calcula con precisión la edad actual de una persona."
+    },
+    {
+      "id": 3,
+      "titulo": "API de Pokémon",
+      "descripcion": "Consulta pokémons usando una API pública.",
+      "tecnologias": ["JavaScript", "fetch", "PokeAPI"],
+      "resultados": "Devuelve datos de pokémons por nombre o ID."
+    },
+    {
+      "id": 4,
+      "titulo": "Contador de clics",
+      "descripcion": "App simple que cuenta los clics del usuario.",
+      "tecnologias": ["React", "JavaScript"],
+      "resultados": "Interfaz que incrementa un número al dar clic en un botón."
+    }
+  ]
+  

@@ -1,0 +1,85 @@
+---
+import Proyectos from '../components/Proyectos.jsx';
+
+const { nombre, foto, bio, email, redes, habilidades } = Astro.props;
+
+import "../styles/styles.css";
+---
+
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Portafolio de {nombre}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <meta name="description" content={`Portafolio profesional de ${nombre} - ${bio}`} />
+  </head>
+  <body>
+    <header class="header-container">
+      <div class="header-content">
+        <img src="https://avatars.githubusercontent.com/u/148809006?s=400&u=ca8a573fa77bd756aa72bc20cacfd07debefbc4e&v=4" alt={nombre} class="profile-pic fade-in" />
+        <div class="header-info fade-in">
+          <h1 class="name">{nombre}</h1>
+          <p class="bio">{bio}</p>
+          <p class="contact">
+            Contacto: <a href={`mailto:${email}`} class="email-link">{email}</a>
+          </p>
+          <div class="social-links">
+            <strong>Redes:</strong>
+            <a href={redes.github} target="_blank" rel="noopener noreferrer" class="social-link">GitHub</a> | 
+            <a href={redes.linkedin} target="_blank" rel="noopener noreferrer" class="social-link">LinkedIn</a> |
+            <a href="#contacto" class="social-link">Contacto</a>
+          </div>
+          <div class="skills">
+            <strong>Habilidades:</strong>
+            <div>
+              {habilidades.map((hab) => <span class="skill-item">{hab}</span>)}
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="projects-container fade-in">
+        <h2>Mis Proyectos</h2>
+        <Proyectos client:load />
+      </section>
+      
+      <section id="contacto" class="contact-section fade-in">
+        <h2>Contacto</h2>
+        <p>¿Tienes alguna pregunta o quieres trabajar conmigo? ¡Envíame un mensaje!</p>
+        
+        <form class="contact-form" action="#" method="POST">
+          <div class="form-group">
+            <label for="nombre" class="form-label">Nombre</label>
+            <input type="text" id="nombre" name="nombre" class="form-input" required />
+          </div>
+          
+          <div class="form-group">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" id="email" name="email" class="form-input" required />
+          </div>
+          
+          <div class="form-group full-width">
+            <label for="asunto" class="form-label">Asunto</label>
+            <input type="text" id="asunto" name="asunto" class="form-input" required />
+          </div>
+          
+          <div class="form-group full-width">
+            <label for="mensaje" class="form-label">Mensaje</label>
+            <textarea id="mensaje" name="mensaje" class="form-textarea" required></textarea>
+          </div>
+          
+          <div class="form-group full-width">
+            <button type="submit" class="submit-button">Enviar mensaje</button>
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <footer class="container" style="text-align: center; padding: 2rem 0; color: var(--gray);">
+      <p>© {new Date().getFullYear()} {nombre}. Todos los derechos reservados.</p>
+    </footer>
+  </body>
+</html>

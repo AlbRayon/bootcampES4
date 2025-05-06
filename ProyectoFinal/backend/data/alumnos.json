@@ -1,0 +1,27 @@
+[
+    {
+      "id": 1,
+      "nombre": "Alberto Rayon",
+      "foto": "/alberto.jpg",
+      "bio": "Desarrollador web en formacion con pasión por el frontend y backend habiendo cursado el diplomado de desarrollo Web de UVM.",
+      "email": "alberto@example.com",
+      "redes": {
+        "github": "https://github.com/albertorayon",
+        "linkedin": "https://linkedin.com/in/albertorayon"
+      },
+      "habilidades": ["JavaScript", "HTML", "CSS", "Astro", "Node.js"]
+    },
+    {
+      "id": 2,
+      "nombre": "Administrador",
+      "foto": "/admin.jpg",
+      "bio": "Administrador del sitio.",
+      "email": "admin@example.com",
+      "redes": {
+        "github": "https://github.com/admin",
+        "linkedin": "https://linkedin.com/in/admin"
+      },
+      "habilidades": ["Gestión de proyectos", "Documentación", "Organización"]
+    }
+  ]
+  
